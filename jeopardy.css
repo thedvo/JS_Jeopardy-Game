@@ -1,0 +1,98 @@
+* {
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Ranchers', cursive;
+	margin-top: 15px;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+#game {
+	border-radius: 25px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+thead {
+	width: 160px;
+	height: 80px;
+	background-color: rgba(48, 75, 228, 0.486);
+	color: white;
+	font-weight: bold;
+}
+
+thead th {
+	border: solid 4px rgb(18, 52, 245);
+	background-color: #004cdacb;
+	font-size: 14px;
+	padding: 12px;
+}
+
+#game-board {
+	table-layout: fixed;
+	width: 95%;
+}
+
+#game-board td {
+	color: white;
+	font-size: 11px;
+	padding: 12px;
+	word-wrap: break-word;
+	height: 100px;
+	border: solid 4px rgb(18, 52, 245);
+	background-color: #1161f4d8;
+}
+
+td:after {
+	content: '\00A0';
+	/* prevents automatic line-break (non-breaking space */
+}
+
+#game-board td:hover {
+	background-color: rgba(42, 54, 221, 0.849);
+}
+
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 160px;
+	height: 160px;
+	margin: -76px 0 0 -76px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+	display: none;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
